@@ -22,7 +22,26 @@
     align-items: center;
 
 }
+#login-item{
+    background: #A7FB7B;
+    border-radius: 30px;
+    width: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    align-items: center;
 
+}
+
+.card{
+    align-items: center;
+}
+.card-block{
+    text-align: center;
+    margin-bottom: 30px;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -950,22 +969,133 @@ section {
 }
 
 
+
+/*--------------------------------------------------------------
+# multitab
+--------------------------------------------------------------*/
+
+.portfolio .info i {
+    font-size: 20px;
+    background: #51a366;
+    color: #151515;
+    float: left;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #151515;
+}
+
+.portfolio .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #484848;
+}
+
+
+
+.portfolio .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+
+
+.portfolio .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.portfolio .php-email-form input,
+.portfolio .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.portfolio .php-email-form input:focus,
+.portfolio .php-email-form textarea:focus {
+    border-color: #A7FB7B;
+}
+
+.portfolio .php-email-form input {
+    height: 44px;
+}
+
+.portfolio .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+.portfolio .php-email-form button[type=submit] {
+    background: #51a366;
+    border: 0;
+    padding: 10px 24px;
+    color: #151515;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.portfolio .php-email-form button[type=submit]:hover {
+    background: #51a366;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-
 .portfolio .portfolio-item {
     margin-bottom: 30px;
-}
-
-.portfolio #portfolio-flters {
+  }
+  .portfolio #portfolio-flters {
     padding: 0;
     margin: 0 auto 20px auto;
     list-style: none;
     text-align: center;
-}
-
-.portfolio #portfolio-flters li {
+  }
+  .portfolio #portfolio-flters li {
     cursor: pointer;
     display: inline-block;
     padding: 8px 15px 10px 15px;
@@ -977,27 +1107,22 @@ section {
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
     border-radius: 3px;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+  }
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     color: #151515;
-    background: #51a366;
-}
-
-.portfolio #portfolio-flters li:last-child {
+    background: #A7FB7B;
+  }
+  .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
+  }
+  .portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
     background: rgba(21, 21, 21, 0.6);
-}
-
-.portfolio .portfolio-wrap::before {
+  }
+  .portfolio .portfolio-wrap::before {
     content: "";
     background: rgba(21, 21, 21, 0.6);
     position: absolute;
@@ -1008,13 +1133,11 @@ section {
     transition: all ease-in-out 0.3s;
     z-index: 2;
     opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
+  }
+  .portfolio .portfolio-wrap img {
     transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
+  }
+  .portfolio .portfolio-wrap .portfolio-info {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -1028,120 +1151,119 @@ section {
     justify-content: flex-end;
     align-items: flex-start;
     padding: 20px;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 {
+  }
+  .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
     color: #fff;
     font-weight: 600;
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
+  }
+  .portfolio .portfolio-wrap .portfolio-info p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     text-transform: uppercase;
     padding: 0;
     margin: 0;
     font-style: italic;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
+  }
+  .portfolio .portfolio-wrap .portfolio-links {
     text-align: center;
     z-index: 4;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
+  }
+  .portfolio .portfolio-wrap .portfolio-links a {
     color: #fff;
     margin: 0 5px 0 0;
     font-size: 28px;
     display: inline-block;
     transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-    color: #51a366;
-}
-
-.portfolio .portfolio-wrap:hover::before {
+  }
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #A7FB7B;
+  }
+  .portfolio .portfolio-wrap:hover::before {
     opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover img {
+  }
+  .portfolio .portfolio-wrap:hover img {
     transform: scale(1.2);
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-info {
+  }
+  .portfolio .portfolio-wrap:hover .portfolio-info {
     opacity: 1;
-}
+  }
+  
+
+
 
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Portfolio details
 --------------------------------------------------------------*/
 
+
+
+
+
 .portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
     width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
+    background-size: cover;
     position: relative;
-}
+  }
+  
+  
+  .portfolio-details .portfolio-details-slider img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 60px 0;
+
+    margin-top: 10px;
+    position: relative;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
     opacity: 1;
-    border: 1px solid #51a366;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #51a366;
-}
-
-.portfolio-details .portfolio-info {
+    border: 1px solid #ffc451;
+  }
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ffc451;
+  }
+  .portfolio-details .portfolio-info {
     padding: 30px;
     box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
+  }
+  .portfolio-details .portfolio-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
+  }
+  .portfolio-details .portfolio-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
+  }
+  .portfolio-details .portfolio-info ul li + li {
     margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
+  }
+  .portfolio-details .portfolio-description {
     padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
+  }
+  .portfolio-details .portfolio-description h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
+  }
+  .portfolio-details .portfolio-description p {
     padding: 0;
-}
-
-
+  }
+  
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1583,7 +1705,6 @@ section {
 --------------------------------------------------------------*/
 
 .breadcrumbs {
-    padding: 15px 0;
     background: whitesmoke;
     min-height: 40px;
     margin-top: 74px;
