@@ -28,7 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  <link href="assets/css/w3.css" rel="stylesheet">
 
 <!------ Include the above in your HEAD tag ---------->
 
@@ -94,7 +94,8 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
-                <li><a class="nav-link scrollto" href="dashboard.html">My dashboard</a></li>
+                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="#">My dashboard</a></li>
 
                 <li><a class="nav-link scrollto" href="#about">ESG Solutions</a></li>
                 <li><a class="nav-link scrollto" href="#services">Our Experts</a></li>
@@ -117,7 +118,7 @@
  padding-top: 15px;">
 <div class="mySlides">
   <img src="1.jpg" style="width:100%">
-  <div class="w3-container w3-green">
+  <div class="w3-container w3-dec">
     <h1 style="margin-left: 15px;"><i>Article1</i></h1>
    
   </div>
@@ -169,6 +170,9 @@
                             <div class="icon-box">
                                 <i class="ri-bar-chart-box-line"></i>
                                 <h3><a href="">ESG Risk Rating</a></h3>
+                                <h3>a Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aut veritatis, illum iusto repellat similique. Debitis, repellendus explicabo. Obcaecati, corporis. Consectetur delectus fugit architecto illum fugiat. Architecto nostrum quos aliquid!</h3>
+                                <a data-solutionCategoryid="" href="categorySolutions.html" class="get-started-btn scrollto">View More</a>
+                            
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-4">
@@ -183,12 +187,18 @@
                             <div class="icon-box">
                                 <i class="bi-bar-chart-line"></i>
                                 <h3><a href="">ESG Intelligence</a></h3>
+                                <h3>a Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aut veritatis, illum iusto repellat similique. Debitis, repellendus explicabo. Obcaecati, corporis. Consectetur delectus fugit architecto illum fugiat. Architecto nostrum quos aliquid!</h3>
+                                <a data-solutionCategoryid="" href="categorySolutions.html" class="get-started-btn scrollto">View More</a>
+                            
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-4">
                             <div class="icon-box">
                                 <i class="ri-database-2-line"></i>
                                 <h3><a href="">ESG 365</a></h3>
+                                <h3>a Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores aut veritatis, illum iusto repellat similique. Debitis, repellendus explicabo. Obcaecati, corporis. Consectetur delectus fugit architecto illum fugiat. Architecto nostrum quos aliquid!</h3>
+                                <a data-solutionCategoryid="" href="categorySolutions.html" class="get-started-btn scrollto">View More</a>
+                            
                                
                             </div>
                         </div>
@@ -260,9 +270,9 @@
            </div>
                   <span v-text="`Strength: ${expert.strength}`"></span>
                   <br>
-                  <span v-text="`ESG rating: ${expert.esgrating}`"></span>
+                  <span v-text="`Languages: ${expert.languages}`"></span>
                 </p>
-                <button type="submit" class="get-started-btn viewProfile" style="background-color: #51a366;" :data-id="`${expert.id}`">View Profile</button>
+                <a href="profile.html" class="get-started-btn viewProfile" style="background-color: #51a366;" :data-id="`${expert.id}`">View Profile</a>
 
               </div>
             </div>
@@ -325,9 +335,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.23.0/ramda.min.js"></script>
 <script>
   const experts = [
-    {id: '1', name: 'Ginilla', esgrating: '20%', strength: 'Social', rating: '5/5', imgscr: 'assets/img/team/Gunilla.jfif'},
-    {id: '2', name: 'Saad', esgrating: '30%', strength: 'Environmetal', rating: '5/5', imgscr: 'assets/img/team/Gunilla.jfif'},
-    {id: '3', name: 'Mohammed', esgrating: '50%', strength: 'Governance', rating: '5/5' , imgscr: 'assets/img/team/Gunilla.jfif'},
+    {id: '1', name: 'Ginilla', languages: 'English', strength: 'Social', rating: '5/5', imgscr: 'assets/img/team/Gunilla.jfif'},
+    {id: '2', name: 'Saad', languages: 'Italy', strength: 'Environmetal', rating: '5/5', imgscr: 'assets/img/team/Gunilla.jfif'},
+    {id: '3', name: 'Mohammed', languages: 'French', strength: 'Governance', rating: '5/5' , imgscr: 'assets/img/team/Gunilla.jfif'},
 
   ] 
   
@@ -344,15 +354,15 @@
   const vm = new Vue({
     el: '#app',
     data: {
-      get esgrating() { 
-        return R.pipe(R.pluck('esgrating'), R.uniq)(experts)
+      get languages() { 
+        return R.pipe(R.pluck('languages'), R.uniq)(experts)
       },
       get strength() { 
         return R.pipe(R.pluck('strength'), R.uniq)(experts)
       },
       get filters() {
         return {
-          'ESG Rating': this.esgrating,
+          'Languages': this.languages,
           'Strength': this.strength
         }
       },
@@ -360,7 +370,7 @@
         // experts that have either a skill or usage value present within active filters
         if (!this.activeFilters.length) return this.experts
         return this.experts.filter(exper => (
-          [exper.esgrating, exper.strength].some(val => this.activeFilters.includes(val))
+          [exper.languages, exper.strength].some(val => this.activeFilters.includes(val))
         ))
       },
       activeFilters,
