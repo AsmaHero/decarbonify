@@ -73,9 +73,7 @@
   <style>
     
   .tab{
-    width: 100%;
     align-items: center;
-    background: linear-gradient(to right,#54924D,#A7FB7B);
     height: 70px;
   }
     
@@ -112,9 +110,13 @@
     .tabcontent {
       display: none;
       padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
 
+      border-top: none;
+   
+    }
+    .tabcontentP {
+      margin-left: 50px;
+      text-align: center;
     }
     </style>
 
@@ -185,7 +187,7 @@
 
                      <div class="buttonsContents">
             
-                        <button class="columnbutton"><i class="ri-video-chat-line"></i> Book Session </button>
+                        <button class="columnbutton"><i class="ri-video-chat-line" ></i> <a href="booksession.html">Book Session</a> </button>
                         <button class="columnbutton" > <i class="ri-send-plane-fill"></i> Message Me </button>
                         <button class="columnbutton"> <i class="ri-share-fill"></i> Share Profile  </button>
 
@@ -275,11 +277,11 @@
 <div class="wrapperrow">
 <center>
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Blogs</button>
+        <button class="tablinks active" onclick="openCity(event, 'Blogs')">Blogs</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Services</button>
       </div>
     </center>
-      <div id="London" class="tabcontent">
+      <div id="Blogs" class="tabcontent">
         <section class="blog">
           <div class="container">
             <div class="row">
@@ -372,9 +374,14 @@
             </div>
       
       <div id="Paris" class="tabcontent">
-        <p>1- Bla bla bla</p> 
-        <p>2- Bla bla bla</p> 
-        <p>3- Bla bla bla</p> 
+        <div class="tabcontentP">
+
+          <p>1- Bla bla bla</p> 
+          <p>2- Bla bla bla</p> 
+          <p>3- Bla bla bla</p> 
+
+        </div>
+
       </div>
       
       

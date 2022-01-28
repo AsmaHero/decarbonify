@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gp Bootstrap Template - Index</title>
+  <title>Portfolio Details - Gp Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,10 +24,55 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-    <!-- Banner dependencies -->
+  <link href="assets/css/w3.css" rel="stylesheet">
+
+<!------ Include the above in your HEAD tag ---------->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="assets/css/bookbfields.css">
+<style>
+.mySlides {display:none; 
+  background: linear-gradient(to right,#54924D,#A7FB7B);}
+.w3-left, .w3-right, .w3-badge {cursor:pointer }
+.w3-badge {height:13px;width:13px;padding:0 }
+
+</style>
+<style>
+
+
+.stars {
+	direction: rtl;
+	margin: 0 auto;
+}
+	label {
+		cursor: pointer;
+		padding: 10px;
+		margin: 0;
+	}
+	
+	.fa {
+		color: #f1c40f;
+		text-shadow: 0 0 5px #f1c40f;
+		font-size: 30px;
+	}
+	
+	input:not(:checked) ~ label:not([for="difficulty-1"]) > .fa-star { display: none; }
+	
+	label:hover > .fa-star-o,
+	label:hover ~ label > .fa-star-o,
+	input:checked ~ label > .fa-star-o { display: none; }
+	
+	label:hover > .fa-star,
+	label:hover ~ label > .fa-star,
+	input:checked ~ label > .fa-star { display: inline-block !important; }
+
+  </style>
+  
 
   <!-- =======================================================
   * Template Name: Gp - v4.7.0
@@ -39,8 +84,8 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
-   <header id="header" class="fixed-top header-inner-pages">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-lg-between">
         <a href="index.html">
             <img src="assets\img\deca-logo.png" width="70px">
@@ -49,12 +94,16 @@
         <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.1" alt="" class="img-fluid"></a>-->
 
         <nav id="navbar" class="navbar order-last order-lg-0">
-            
             <ul>
                 <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li id="navbar"> <a  href="customers.html" class="nav-link"><span style="background-color: #51a366" id="login-item">Login</span> </a></li>
+                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="#">My dashboard</a></li>
 
+                <li><a class="nav-link scrollto" href="#about">ESG Solutions</a></li>
+                <li><a class="nav-link scrollto" href="#services">Our Experts</a></li>
+          
+
+                <li id="navbar"> <a  href="#contact" class="nav-link scrollto" ><span style="background-color: #51a366" id="contact-item">Get in touch</span> </a></li>
               </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
      
@@ -65,79 +114,61 @@
   
 
     </div>
-       <!-- ======= Contact Section ======= -->
-      
 </header>
+ <!-- ======= Breadcrumbs ======= -->
+ <div class="w3-content w3-display-container" style="max-width:100%;margin-top: 85px;
+ padding-top: 15px;">
+<div class="mySlides w3-white" style="display: block;">
+  <img src="assets/img/experts.jpg" style="width:100%" data-hex="63803a">
+     <div class="w3-container w3-dec" id="slideLabel">
+
+        <h3 style="margin-left: 15px;"><i>Book your session</i></h3>
+        <div class="row" data-aos="fade-up" data-aos-delay="100" >
+          <div class="searchBox">
+
+             <div class="inputBx">
+               <p>Topic Name</p>
+               <input type="text" placeholder="Ex: Maldives" />
+             </div>
+             <div class="dateInps"></div>
+             <div class="inputBx">
+               <p>Date</p>
+               <input type="date" />
+             </div>
+             <div class="inputBx">
+               <p>Time</p>
+               <input type="time" />
+             </div>
+             <div class="inputBx">
+               <p class="white">&nbsp;</p>
+               <input type="submit" value="Find" />
+             </div>
+              </div>
+   
+</div>
+   
+  
+   <!-- End Contact Section -->
+      
+     </div>
+</div>
+
+</div>
+ 
 <main id="main">
 
-
-<section id="contact" class="portfolio" style="max-width:100%;margin-top: 95px;
-padding-top: 25px; ">
-    <div class="container" data-aos="fade-up">
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="heading1"><strong>Sign up Now!</strong> </h2>
-            <div class="col-lg-12 d-flex justify-content-center">
-               
-              <ul id="portfolio-flters">
-                <li data-filter=".filter-customers"  class="tablinks filter-active" onclick="openCity(event)">Customers</li>
-                <li data-filter=".filter-suppliers" class="tablinks" onclick="openCity(event)">Suppliers</li>
-                <li data-filter=".filter-experts" class="tablinks"onclick="openCity(event)">Expert</li>
-              </ul>
-            </div>
-          </div>
-      <div class="row">
-
-        <div class="col-lg-12 mt-5 mt-lg-12">
-
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="row" style="margin-top: 15px;">
-
-            <div class="col-md-6 form-group">
-              <input type="text" class="form-control" name="Job Title" id="subject" placeholder="Job Title" required>
-            </div>
-
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="Organization Name" id="Organization Name" placeholder="Organization Name" required>
-
-            </div>
-
-            
-            </div>
-            <div class="my-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Overview" required></textarea>
-
-            </div>
-            <div class="text-center"><button type="submit">Sign up</button></div>
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Contact Section -->s
-  </main><!-- End #main -->
+    </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer"> <div class="footer-top">
-
     <a href="index.html" style="margin-left: 50%; margin-right: 50%;">
         <img src="assets\img\deca-logo.png" width="70px">
     </a>
     <div class="container">
 
-
         <hr>
         <center>
-            <div class="social-links mt-3" style="align-items: center;">
+            <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -155,8 +186,6 @@ padding-top: 25px; ">
 
     </div>
 </div></footer>
-
-
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -171,17 +200,10 @@ padding-top: 25px; ">
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    function openCity(evt) {
 
-      tablinks = document.getElementsByClassName("tablinks");
-      console.log(tablinks);
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("filter-active");
-      }
-      evt.currentTarget.classList.add("filter-active");
-    }
-    </script>
+  
+</script>
+  
 </body>
 
 </html>
