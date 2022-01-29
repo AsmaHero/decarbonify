@@ -11,6 +11,23 @@
 /*--------------------------------------------------------------
 # profile card css
 --------------------------------------------------------------*/
+.nicebuttons{
+    width: 100px;
+    color:#54924D;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    display: inline-block;
+    border: 2px solid #a6fb7a;
+    /* Black shadow with 10px blur */
+    box-shadow: 2px 3px;
+    background: #f3f3f3;
+    margin: 10px;
+
+}
+.gridview .selected, .gridview tbody .selected {
+    background-color: chartreuse;
+}
 .buttonsContents{
     width: 50%;
     height: 20%;

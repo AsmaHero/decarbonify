@@ -81,7 +81,11 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<style>
+  table, th, td {
+    border:1px solid black;
+  }
+  </style>
 <body>
 
   <!-- ======= Header ======= -->
@@ -125,10 +129,13 @@
         <h3 style="margin-left: 15px;"><i>Book your session</i></h3>
         <div class="row" data-aos="fade-up" data-aos-delay="100" >
           <div class="searchBox">
-
+            <div class="inputBx">
+              <p>Expert Name</p>
+              <input type="text" placeholder="Ex. Maldives" />
+            </div>
              <div class="inputBx">
                <p>Topic Name</p>
-               <input type="text" placeholder="Ex: Maldives" />
+               <input type="text" placeholder="Ex. Human Rights" />
              </div>
              <div class="dateInps"></div>
              <div class="inputBx">
@@ -141,16 +148,13 @@
              </div>
              <div class="inputBx">
                <p class="white">&nbsp;</p>
-               <input type="submit" value="Find" />
+               <input type="submit" value="Find" onclick="loadTable(event)" data-id="1" />
              </div>
               </div>
    
 </div>
    
-  
-   <!-- End Contact Section -->
-      
-     </div>
+
 </div>
 
 </div>
@@ -202,7 +206,36 @@
   <script src="assets/js/main.js"></script>
 
   
-</script>
+  <script> 
+ function loadTable(event) {
+  const el = document.createElement("div");
+  el.classList = 'row';
+
+  el.innerHTML = '<h2>Available Dates</h2>'+
+    '<table style="width:100%;justify-content: center;" class="gridview"><tr><th>#</th><th>Date</th><th>Time</th><th>Pick up a date</th></tr>'+
+  '<tr ><td>1</td><td>25/01/2022</td><td>6:00AM</td><td><button  class="nicebuttons" onclick='+'toggleClass(this,"selected");'+'>Select</button></td></tr>'+
+  '<tr><td>2</td><td>27/01/2022</td><td>12:00AM</td><td><button  class="nicebuttons" onclick='+'toggleClass(this,"selected");'+'>Select</button></td>'
+    + '</tr></table><br><br>'+
+    '<center><button class="nicebuttons"> Book</button></center>';
+ var parent = document.getElementById("slideLabel");
+ 
+ parent.appendChild(el);
+
+   
+ }
+ function toggleClass(el, className) {
+
+
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className," ");
+    }
+    else {
+        el.className  += ' ' + className;
+  
+
+    }
+}
+  </script>
   
 </body>
 
