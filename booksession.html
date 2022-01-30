@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Gp Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/w3.css" rel="stylesheet">
+
+<!------ Include the above in your HEAD tag ---------->
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="assets/css/bookbfields.css">
+<style>
+.mySlides {display:none; 
+  background: linear-gradient(to right,#54924D,#A7FB7B);}
+.w3-left, .w3-right, .w3-badge {cursor:pointer }
+.w3-badge {height:13px;width:13px;padding:0 }
+
+</style>
+<style>
+
+
+.stars {
+	direction: rtl;
+	margin: 0 auto;
+}
+	label {
+		cursor: pointer;
+		padding: 10px;
+		margin: 0;
+	}
+	
+	.fa {
+		color: #f1c40f;
+		text-shadow: 0 0 5px #f1c40f;
+		font-size: 30px;
+	}
+	
+	input:not(:checked) ~ label:not([for="difficulty-1"]) > .fa-star { display: none; }
+	
+	label:hover > .fa-star-o,
+	label:hover ~ label > .fa-star-o,
+	input:checked ~ label > .fa-star-o { display: none; }
+	
+	label:hover > .fa-star,
+	label:hover ~ label > .fa-star,
+	input:checked ~ label > .fa-star { display: inline-block !important; }
+
+  </style>
+  
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.7.0
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  table, th, td {
+    border:1px solid black;
+  }
+  </style>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+        <a href="index.html">
+            <img src="assets\img\deca-logo.png" width="70px">
+        </a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.1" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="#">My dashboard</a></li>
+
+                <li><a class="nav-link scrollto" href="#about">ESG Solutions</a></li>
+                <li><a class="nav-link scrollto" href="#services">Our Experts</a></li>
+          
+
+                <li id="navbar"> <a  href="#contact" class="nav-link scrollto" ><span style="background-color: #51a366" id="contact-item">Get in touch</span> </a></li>
+              </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+     
+            
+        </nav>
+        <!-- .navbar -->
+
+  
+
+    </div>
+</header>
+ <!-- ======= Breadcrumbs ======= -->
+ <div class="w3-content w3-display-container" style="max-width:100%;margin-top: 85px;
+ padding-top: 15px;">
+<div class="mySlides w3-white" style="display: block;">
+  <img src="assets/img/experts.jpg" style="width:100%" data-hex="63803a">
+     <div class="w3-container w3-dec" id="slideLabel">
+
+        <h3 style="margin-left: 15px;"><i>Book your session</i></h3>
+        <div class="row" data-aos="fade-up" data-aos-delay="100" >
+          <div class="searchBox">
+            <div class="inputBx">
+              <p>Expert Name</p>
+              <input type="text" placeholder="Ex. Maldives" />
+            </div>
+             <div class="inputBx">
+               <p>Topic Name</p>
+               <input type="text" placeholder="Ex. Human Rights" />
+             </div>
+             <div class="dateInps"></div>
+             <div class="inputBx">
+               <p>Date</p>
+               <input type="date" />
+             </div>
+             <div class="inputBx">
+               <p>Time</p>
+               <input type="time" />
+             </div>
+             <div class="inputBx">
+               <p class="white">&nbsp;</p>
+               <input type="submit" value="Find" onclick="loadTable(event)" data-id="1" />
+             </div>
+              </div>
+   
+</div>
+   
+
+</div>
+
+</div>
+ 
+<main id="main">
+
+    </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer"> <div class="footer-top">
+    <a href="index.html" style="margin-left: 50%; margin-right: 50%;">
+        <img src="assets\img\deca-logo.png" width="70px">
+    </a>
+    <div class="container">
+
+        <hr>
+        <center>
+            <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </center>
+    </div>
+</div>
+
+<div class="container">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Decarbonify</span></strong>. All Rights Reserved.
+    </div>
+    <div class="credits">
+
+    </div>
+</div></footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  
+  <script> 
+ function loadTable(event) {
+  const el = document.createElement("div");
+  el.classList = 'row';
+
+  el.innerHTML = '<h2>Available Dates</h2>'+
+    '<table style="width:100%;justify-content: center;" class="gridview"><tr><th>#</th><th>Date</th><th>Time</th><th>Pick up a date</th></tr>'+
+  '<tr ><td>1</td><td>25/01/2022</td><td>6:00AM</td><td><button  class="nicebuttons" onclick='+'toggleClass(this,"selected");'+'>Select</button></td></tr>'+
+  '<tr><td>2</td><td>27/01/2022</td><td>12:00AM</td><td><button  class="nicebuttons" onclick='+'toggleClass(this,"selected");'+'>Select</button></td>'
+    + '</tr></table><br><br>'+
+    '<center><button class="nicebuttons"> Book</button></center>';
+ var parent = document.getElementById("slideLabel");
+ 
+ parent.appendChild(el);
+
+   
+ }
+ function toggleClass(el, className) {
+
+
+    if (el.className.indexOf(className) >= 0) {
+        el.className = el.className.replace(className," ");
+    }
+    else {
+        el.className  += ' ' + className;
+  
+
+    }
+}
+  </script>
+  
+</body>
+
+</html>
