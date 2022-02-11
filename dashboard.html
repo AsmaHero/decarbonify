@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/img/logo.PNG" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Decarbonify</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Overview</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-layer icon'></i>
+                            <span class="text nav-text">My Blogs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-list-plus icon'></i>
+                            <span class="text nav-text">Appointments</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Reports</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-trophy icon'></i>
+                            <span class="text nav-text">Favorites</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="tittle">Profile</div>
+        <form action="#">
+
+            <div class="user-details">
+                <div class="box">
+                    <img src="assets/img/mountain.jpg" class="first" /></image>
+                    <input type="file" name="" id="files" accept="image/*">
+                    <label for="file">Change Header</label>
+                </div>
+                <div class="pic">
+                    <img src="assets/img/kenny.jfif" class="second" /></image>
+                    <input type="file" name="" id="file" accept="image/*">
+                    <label for="file">Change Picture</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Full Name*</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Strength</span>
+                    <div class="drop">
+                        <div class="drop-select">
+                            <span class="select">Environmental</span>
+                            <i class="bx-down-arrow"></i>
+                        </div>
+                        <div class="strength_list">
+                            <div class="strength_list_item">Environmentalist</div>
+                            <div class="strength_list_item">Sustainable</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="details">Website</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Country</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number*</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Organization Email*</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="input-boxy">
+                    <span class="details">About</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Update">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
